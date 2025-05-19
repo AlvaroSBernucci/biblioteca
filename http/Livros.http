@@ -15,17 +15,21 @@ Content-Type: application/json
 
 ###
 
-GET http://127.0.0.1:8000/livros/1/
+GET http://127.0.0.1:8000/livros/2/
 
 ###
 
-PUT http://127.0.0.1:8000/livros/1/
+PUT http://127.0.0.1:8000/livros/2/
 Content-Type: application/json
 
 {
-    "titulo": "Ronaldo o grande",
-    "descricao": "Esse é um teste PUT",
+    "titulo": "TESTE POST",
+    "descricao": "Esse é um teste POST NA VIEW NOVA",
     "editora": "PUT TESTER",
     "publicado_em": "2010-05-15",
     "autor_id": 1
 }
+
+###
+
+DELETE http://127.0.0.1:8000/livros/2/
