@@ -1,0 +1,31 @@
+GET http://127.0.0.1:8000/livros/
+
+###
+
+POST http://127.0.0.1:8000/livros/
+Content-Type: application/json
+
+{
+    "titulo": "TESTE PSOT",
+    "descricao": "Esse é um teste POST",
+    "editora": "TESTER",
+    "publicado_em": "2010-05-15",
+    "autor_id": 1
+}
+
+###
+
+GET http://127.0.0.1:8000/livros/1/
+
+###
+
+PUT http://127.0.0.1:8000/livros/1/
+Content-Type: application/json
+
+{
+    "titulo": "Ronaldo o grande",
+    "descricao": "Esse é um teste PUT",
+    "editora": "PUT TESTER",
+    "publicado_em": "2010-05-15",
+    "autor_id": 1
+}
